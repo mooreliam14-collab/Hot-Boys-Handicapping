@@ -11,7 +11,7 @@
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
 const ALIAS = { WAS: "WSH", LA: "LAR" };
 const UNIT = { rec: "rec", recYds: "yds", car: "car", rushYds: "yds", passYds: "yds", passTD: "pass TD", fgMade: "FG", totalTD: "TD" };
-const LIVE_POLL_MS = 45000, IDLE_POLL_MS = 300000;
+const LIVE_POLL_MS = 15000, IDLE_POLL_MS = 60000;
 
 function espnAbbr(a) { return ALIAS[a] || a; }
 function n(v) { const x = parseFloat(v); return isNaN(x) ? 0 : x; }
