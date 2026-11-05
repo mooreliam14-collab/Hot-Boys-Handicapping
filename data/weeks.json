@@ -1,0 +1,606 @@
+{
+ "season": 2026,
+ "people": [
+  "Jack",
+  "Nick",
+  "Liam",
+  "Cav",
+  "Orion",
+  "Jules",
+  "Hawth",
+  "Neil"
+ ],
+ "weeks": [
+  {
+   "week": 3,
+   "legacy": {
+    "Jack": null,
+    "Nick": 50,
+    "Liam": 50,
+    "Cav": 50,
+    "Orion": 50,
+    "Jules": 50,
+    "Hawth": 0,
+    "Neil": 0
+   },
+   "complete": true
+  },
+  {
+   "week": 4,
+   "legacy": {
+    "Jack": 50,
+    "Nick": 100,
+    "Liam": 50,
+    "Cav": 50,
+    "Orion": 50,
+    "Jules": 50,
+    "Hawth": 100,
+    "Neil": 50
+   },
+   "complete": true
+  },
+  {
+   "week": 5,
+   "legacy": {
+    "Jack": 100,
+    "Nick": 50,
+    "Liam": 100,
+    "Cav": 50,
+    "Orion": 50,
+    "Jules": 50,
+    "Hawth": 50,
+    "Neil": 0
+   },
+   "complete": true
+  },
+  {
+   "week": 6,
+   "legacy": {
+    "Jack": 100,
+    "Nick": 100,
+    "Liam": 50,
+    "Cav": 100,
+    "Orion": 100,
+    "Jules": 50,
+    "Hawth": 0,
+    "Neil": 0
+   },
+   "complete": true
+  },
+  {
+   "week": 7,
+   "complete": true,
+   "updatedAt": "2026-10-29T13:03:00-04:00",
+   "games": [
+    {
+     "id": "ne-chi",
+     "away": "NE",
+     "home": "CHI",
+     "window": "Thursday night",
+     "order": 1,
+     "score": "Final \u00b7 CHI 30\u201324"
+    },
+    {
+     "id": "pit-no",
+     "away": "PIT",
+     "home": "NO",
+     "window": "Sunday morning",
+     "order": 1,
+     "score": "Final \u00b7 PIT 16\u201310"
+    },
+    {
+     "id": "sf-atl",
+     "away": "SF",
+     "home": "ATL",
+     "window": "Sunday 1:00 PM",
+     "order": 1,
+     "score": "Final \u00b7 ATL 29\u201320"
+    },
+    {
+     "id": "nyg-hou",
+     "away": "NYG",
+     "home": "HOU",
+     "window": "Sunday 1:00 PM",
+     "order": 2,
+     "score": "Final/OT \u00b7 NYG 27\u201321"
+    },
+    {
+     "id": "cle-ten",
+     "away": "CLE",
+     "home": "TEN",
+     "window": "Sunday 1:00 PM",
+     "order": 3,
+     "score": "Final \u00b7 CLE 27\u201324"
+    },
+    {
+     "id": "cin-bal",
+     "away": "CIN",
+     "home": "BAL",
+     "window": "Sunday 1:00 PM",
+     "order": 4,
+     "score": "Final \u00b7 CIN 35\u201313"
+    },
+    {
+     "id": "tb-car",
+     "away": "TB",
+     "home": "CAR",
+     "window": "Sunday 1:00 PM",
+     "order": 5,
+     "score": "Final \u00b7 TB 43\u201313"
+    },
+    {
+     "id": "den-ari",
+     "away": "DEN",
+     "home": "ARI",
+     "window": "Sunday 4:05 PM",
+     "order": 1,
+     "score": "Final \u00b7 DEN 30\u201316"
+    },
+    {
+     "id": "gb-det",
+     "away": "GB",
+     "home": "DET",
+     "window": "Sunday 4:25 PM",
+     "order": 1,
+     "score": "Final \u00b7 DET 20\u201317"
+    },
+    {
+     "id": "la-lv",
+     "away": "LA",
+     "home": "LV",
+     "window": "Sunday 4:25 PM",
+     "order": 2,
+     "score": "Final \u00b7 LA 35\u201321"
+    }
+   ],
+   "bets": [
+    {
+     "id": "w7-1",
+     "who": "Liam",
+     "game": "ne-chi",
+     "text": "Loveland 4+ receptions",
+     "status": "hit",
+     "detail": "7 rec, 69 yds, TD"
+    },
+    {
+     "id": "w7-2",
+     "who": "Hawth",
+     "game": "ne-chi",
+     "text": "Maye o1.5 passing TDs",
+     "status": "hit",
+     "detail": "2 TD (Stevenson, Raridon)"
+    },
+    {
+     "id": "w7-3",
+     "who": "Orion",
+     "game": "pit-no",
+     "text": "Freiermuth 30+ receiving",
+     "status": "miss",
+     "detail": "2 rec, 20 yds"
+    },
+    {
+     "id": "w7-4",
+     "who": "Cav",
+     "game": "sf-atl",
+     "text": "Niners ML",
+     "status": "miss",
+     "detail": "Lost 29\u201320"
+    },
+    {
+     "id": "w7-5",
+     "who": "Jack",
+     "game": "sf-atl",
+     "text": "Kittle anytime TD",
+     "status": "miss",
+     "detail": "8 rec, 88 yds, no TD"
+    },
+    {
+     "id": "w7-6",
+     "who": "Cav",
+     "game": "nyg-hou",
+     "text": "Giants +10.5",
+     "status": "hit",
+     "detail": "Won outright in OT"
+    },
+    {
+     "id": "w7-7",
+     "who": "Nick",
+     "game": "cle-ten",
+     "text": "Browns ML",
+     "status": "hit",
+     "detail": "Won 27\u201324 on final-second FG"
+    },
+    {
+     "id": "w7-8",
+     "who": "Jules",
+     "game": "cle-ten",
+     "text": "Fannin anytime TD",
+     "status": "miss",
+     "detail": "6 rec, 91 yds, no TD"
+    },
+    {
+     "id": "w7-9",
+     "who": "Hawth",
+     "game": "cin-bal",
+     "text": "Derrick Henry anytime TD",
+     "status": "miss",
+     "detail": "No TD"
+    },
+    {
+     "id": "w7-10",
+     "who": "Orion",
+     "game": "cin-bal",
+     "text": "Henry 80+ rushing",
+     "status": "miss",
+     "detail": "17 car, 45 yds"
+    },
+    {
+     "id": "w7-11",
+     "who": "Liam",
+     "game": "tb-car",
+     "text": "Chuba anytime TD",
+     "status": "miss",
+     "detail": "7 car, 33 yds; 4 rec, 27 yds"
+    },
+    {
+     "id": "w7-12",
+     "who": "Jack",
+     "game": "den-ari",
+     "text": "McBride 50+ receiving",
+     "status": "hit",
+     "detail": "10 rec, 111 yds, TD"
+    },
+    {
+     "id": "w7-13",
+     "who": "Neil",
+     "game": "gb-det",
+     "text": "Jordan Love 275+ passing",
+     "status": "miss",
+     "detail": "274 yds, one short"
+    },
+    {
+     "id": "w7-14",
+     "who": "Neil",
+     "game": "gb-det",
+     "text": "Josh Jacobs anytime TD",
+     "status": "hit",
+     "detail": "25-yd receiving TD"
+    },
+    {
+     "id": "w7-15",
+     "who": "Nick",
+     "game": "gb-det",
+     "text": "LaPorta 5+ receptions",
+     "status": "miss",
+     "detail": "1 rec, 18 yds"
+    },
+    {
+     "id": "w7-16",
+     "who": "Jules",
+     "game": "la-lv",
+     "text": "Bowers anytime TD",
+     "status": "miss",
+     "detail": "No TD"
+    }
+   ]
+  },
+  {
+   "bets": [
+    {
+     "detail": "6 rec, 13 yds, TD",
+     "game": "car-gb",
+     "id": "w8-1",
+     "progress": {
+      "cleared": true,
+      "current": 6,
+      "line": 3,
+      "unit": "rec"
+     },
+     "status": "hit",
+     "text": "Josh Jacobs 3+ receptions",
+     "who": "Hawth"
+    },
+    {
+     "detail": "8 car, 23 yds",
+     "game": "ind-jax",
+     "id": "w8-2",
+     "progress": {
+      "cleared": false,
+      "current": 23,
+      "line": 63.5,
+      "unit": "yds"
+     },
+     "status": "miss",
+     "text": "Jonathan Taylor o63.5 rushing",
+     "who": "Cav"
+    },
+    {
+     "detail": "0/0 FG, 1/1 XP",
+     "game": "ind-jax",
+     "id": "w8-3",
+     "progress": {
+      "cleared": false,
+      "current": 0,
+      "line": 2,
+      "unit": "FG"
+     },
+     "status": "miss",
+     "text": "Shrader 2+ FG",
+     "who": "Neil"
+    },
+    {
+     "detail": "20 rush yds, rush TD",
+     "game": "ari-dal",
+     "id": "w8-4",
+     "progress": {
+      "cleared": true,
+      "current": 20,
+      "line": 8.5,
+      "unit": "yds"
+     },
+     "status": "hit",
+     "text": "Dak o8.5 rushing",
+     "who": "Cav"
+    },
+    {
+     "detail": "7 rec, 58 yds",
+     "game": "ari-dal",
+     "id": "w8-5",
+     "progress": {
+      "cleared": true,
+      "current": 7,
+      "line": 6,
+      "unit": "rec"
+     },
+     "status": "hit",
+     "text": "Lamb 6+ receptions",
+     "who": "Orion"
+    },
+    {
+     "detail": "3 rec, 64 yds",
+     "game": "lv-nyj",
+     "id": "w8-6",
+     "progress": {
+      "cleared": true,
+      "current": 3,
+      "line": 3,
+      "unit": "rec"
+     },
+     "status": "hit",
+     "text": "Jeanty 3+ receptions",
+     "who": "Hawth"
+    },
+    {
+     "detail": "Won 38\u201333",
+     "game": "lv-nyj",
+     "id": "w8-7",
+     "status": "hit",
+     "text": "Raiders +3.5",
+     "who": "Nick"
+    },
+    {
+     "detail": "0 rec, 0 yds (active, no targets)",
+     "game": "lv-nyj",
+     "id": "w8-8",
+     "progress": {
+      "cleared": false,
+      "current": 0,
+      "line": 30,
+      "unit": "yds"
+     },
+     "status": "miss",
+     "text": "Omar Cooper Jr. 30+ receiving",
+     "who": "Jack"
+    },
+    {
+     "detail": "0 rec, 0 yds (5 targets)",
+     "game": "bal-buf",
+     "id": "w8-9",
+     "progress": {
+      "cleared": false,
+      "current": 0,
+      "line": 70,
+      "unit": "yds"
+     },
+     "status": "miss",
+     "text": "Flowers 70+ receiving",
+     "who": "Liam"
+    },
+    {
+     "detail": "11 car, 53 yds, 1 TD",
+     "game": "bal-buf",
+     "id": "w8-10",
+     "progress": {
+      "cleared": true,
+      "current": 1,
+      "line": 1,
+      "unit": "TD"
+     },
+     "status": "hit",
+     "text": "Derrick Henry anytime TD",
+     "who": "Nick"
+    },
+    {
+     "detail": "Won 27\u20136",
+     "game": "cle-pit",
+     "id": "w8-11",
+     "status": "hit",
+     "text": "Steelers ML",
+     "who": "Liam"
+    },
+    {
+     "detail": "33 total pts (27\u20136)",
+     "game": "cle-pit",
+     "id": "w8-12",
+     "status": "miss",
+     "text": "Browns/Steelers o39.5",
+     "who": "Jules"
+    },
+    {
+     "detail": "5 rec, 76 yds",
+     "game": "ten-cin",
+     "id": "w8-13",
+     "progress": {
+      "cleared": true,
+      "current": 76,
+      "line": 19.5,
+      "unit": "yds"
+     },
+     "status": "hit",
+     "text": "Gunnar Helm o19.5 receiving",
+     "who": "Neil"
+    },
+    {
+     "detail": "7 rec, 46 yds",
+     "game": "min-det",
+     "id": "w8-14",
+     "progress": {
+      "cleared": true,
+      "current": 7,
+      "line": 6,
+      "unit": "rec"
+     },
+     "status": "hit",
+     "text": "St. Brown 6+ receptions",
+     "who": "Orion"
+    },
+    {
+     "detail": "Won 24\u201319, failed to cover",
+     "game": "ne-mia",
+     "id": "w8-15",
+     "status": "miss",
+     "text": "Patriots -6.5",
+     "who": "Jules"
+    },
+    {
+     "detail": "19 car, 69 yds",
+     "game": "ne-mia",
+     "id": "w8-16",
+     "progress": {
+      "cleared": true,
+      "current": 69,
+      "line": 50,
+      "unit": "yds"
+     },
+     "status": "hit",
+     "text": "Ollie Gordon 50+ rushing",
+     "who": "Jack"
+    }
+   ],
+   "complete": true,
+   "games": [
+    {
+     "away": "CAR",
+     "awayScore": 19,
+     "home": "GB",
+     "homeScore": 27,
+     "id": "car-gb",
+     "order": 1,
+     "score": "Final \u00b7 GB 27\u201319",
+     "status": "final",
+     "window": "Thursday night"
+    },
+    {
+     "away": "IND",
+     "awayScore": 7,
+     "home": "JAX",
+     "homeScore": 42,
+     "id": "ind-jax",
+     "kickoff": "Sun 1:00 PM",
+     "order": 1,
+     "score": "Final \u00b7 JAX 42\u20137",
+     "status": "final",
+     "window": "Sunday 1:00 PM"
+    },
+    {
+     "away": "ARI",
+     "awayScore": 33,
+     "home": "DAL",
+     "homeScore": 30,
+     "id": "ari-dal",
+     "kickoff": "Sun 1:00 PM",
+     "order": 2,
+     "ot": true,
+     "score": "Final/OT \u00b7 ARI 33\u201330",
+     "status": "final",
+     "window": "Sunday 1:00 PM"
+    },
+    {
+     "away": "LV",
+     "awayScore": 38,
+     "home": "NYJ",
+     "homeScore": 33,
+     "id": "lv-nyj",
+     "kickoff": "Sun 1:00 PM",
+     "order": 3,
+     "score": "Final \u00b7 LV 38\u201333",
+     "status": "final",
+     "window": "Sunday 1:00 PM"
+    },
+    {
+     "away": "BAL",
+     "awayScore": 10,
+     "home": "BUF",
+     "homeScore": 36,
+     "id": "bal-buf",
+     "kickoff": "Sun 1:00 PM",
+     "order": 4,
+     "score": "Final \u00b7 BUF 36\u201310",
+     "status": "final",
+     "window": "Sunday 1:00 PM"
+    },
+    {
+     "away": "CLE",
+     "awayScore": 6,
+     "home": "PIT",
+     "homeScore": 27,
+     "id": "cle-pit",
+     "kickoff": "Sun 1:00 PM",
+     "order": 5,
+     "score": "Final \u00b7 PIT 27\u20136",
+     "status": "final",
+     "window": "Sunday 1:00 PM"
+    },
+    {
+     "away": "TEN",
+     "awayScore": 36,
+     "home": "CIN",
+     "homeScore": 43,
+     "id": "ten-cin",
+     "kickoff": "Sun 1:00 PM",
+     "order": 6,
+     "ot": true,
+     "score": "Final/OT \u00b7 CIN 43\u201336",
+     "status": "final",
+     "window": "Sunday 1:00 PM"
+    },
+    {
+     "away": "MIN",
+     "awayScore": 15,
+     "home": "DET",
+     "homeScore": 19,
+     "id": "min-det",
+     "kickoff": "Sun 1:00 PM",
+     "order": 7,
+     "score": "Final \u00b7 DET 19\u201315",
+     "status": "final",
+     "window": "Sunday 1:00 PM"
+    },
+    {
+     "away": "NE",
+     "awayScore": 24,
+     "home": "MIA",
+     "homeScore": 19,
+     "id": "ne-mia",
+     "kickoff": "Sun 4:25 PM",
+     "order": 1,
+     "score": "Final \u00b7 NE 24\u201319",
+     "status": "final",
+     "window": "Sunday 4:25 PM"
+    }
+   ],
+   "updatedAt": "2026-11-01T19:58:00-05:00",
+   "week": 8
+  }
+ ]
+}
