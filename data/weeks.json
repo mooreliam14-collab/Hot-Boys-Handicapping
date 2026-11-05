@@ -619,23 +619,15 @@
      "away": "CIN",
      "home": "ATL",
      "window": "Sunday morning",
-     "order": 2,
-     "kickoff": "Sun 9:30 AM"
-    },
-    {
-     "id": "dal-ind",
-     "away": "DAL",
-     "home": "IND",
-     "window": "Sunday 1:00 PM",
-     "order": 3,
-     "kickoff": "Sun 1:00 PM"
+     "order": 1,
+     "kickoff": "Sun 9:30 AM \u00b7 Madrid"
     },
     {
      "id": "nyj-kc",
      "away": "NYJ",
      "home": "KC",
      "window": "Sunday 1:00 PM",
-     "order": 4,
+     "order": 1,
      "kickoff": "Sun 1:00 PM"
     },
     {
@@ -643,15 +635,7 @@
      "away": "DET",
      "home": "MIA",
      "window": "Sunday 1:00 PM",
-     "order": 5,
-     "kickoff": "Sun 1:00 PM"
-    },
-    {
-     "id": "cle-no",
-     "away": "CLE",
-     "home": "NO",
-     "window": "Sunday 1:00 PM",
-     "order": 6,
+     "order": 2,
      "kickoff": "Sun 1:00 PM"
     },
     {
@@ -659,7 +643,7 @@
      "away": "NYG",
      "home": "PHI",
      "window": "Sunday 1:00 PM",
-     "order": 7,
+     "order": 3,
      "kickoff": "Sun 1:00 PM"
     },
     {
@@ -667,7 +651,7 @@
      "away": "LAR",
      "home": "WAS",
      "window": "Sunday 1:00 PM",
-     "order": 8,
+     "order": 4,
      "kickoff": "Sun 1:00 PM"
     },
     {
@@ -675,39 +659,15 @@
      "away": "DEN",
      "home": "CAR",
      "window": "Sunday 1:00 PM",
-     "order": 9,
+     "order": 5,
      "kickoff": "Sun 1:00 PM"
-    },
-    {
-     "id": "hou-lac",
-     "away": "HOU",
-     "home": "LAC",
-     "window": "Sunday 4:05 PM",
-     "order": 10,
-     "kickoff": "Sun 4:05 PM"
-    },
-    {
-     "id": "gb-ne",
-     "away": "GB",
-     "home": "NE",
-     "window": "Sunday 4:25 PM",
-     "order": 11,
-     "kickoff": "Sun 4:25 PM"
     },
     {
      "id": "lv-sf",
      "away": "LV",
      "home": "SF",
      "window": "Sunday 4:25 PM",
-     "order": 12,
-     "kickoff": "Sun 4:25 PM"
-    },
-    {
-     "id": "ari-sea",
-     "away": "ARI",
-     "home": "SEA",
-     "window": "Sunday 4:25 PM",
-     "order": 13,
+     "order": 1,
      "kickoff": "Sun 4:25 PM"
     },
     {
@@ -715,16 +675,8 @@
      "away": "TB",
      "home": "CHI",
      "window": "Sunday night",
-     "order": 14,
+     "order": 1,
      "kickoff": "Sun 8:20 PM"
-    },
-    {
-     "id": "buf-min",
-     "away": "BUF",
-     "home": "MIN",
-     "window": "Monday night",
-     "order": 15,
-     "kickoff": "Mon 8:15 PM"
     }
    ],
    "bets": [
