@@ -601,6 +601,348 @@
    ],
    "updatedAt": "2026-11-01T19:58:00-05:00",
    "week": 8
+  },
+  {
+   "week": 9,
+   "complete": false,
+   "games": [
+    {
+     "id": "jax-bal",
+     "away": "JAX",
+     "home": "BAL",
+     "window": "Thursday night",
+     "order": 1,
+     "kickoff": "Thu 8:15 PM"
+    },
+    {
+     "id": "cin-atl",
+     "away": "CIN",
+     "home": "ATL",
+     "window": "Sunday morning",
+     "order": 2,
+     "kickoff": "Sun 9:30 AM"
+    },
+    {
+     "id": "dal-ind",
+     "away": "DAL",
+     "home": "IND",
+     "window": "Sunday 1:00 PM",
+     "order": 3,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "nyj-kc",
+     "away": "NYJ",
+     "home": "KC",
+     "window": "Sunday 1:00 PM",
+     "order": 4,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "det-mia",
+     "away": "DET",
+     "home": "MIA",
+     "window": "Sunday 1:00 PM",
+     "order": 5,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "cle-no",
+     "away": "CLE",
+     "home": "NO",
+     "window": "Sunday 1:00 PM",
+     "order": 6,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "nyg-phi",
+     "away": "NYG",
+     "home": "PHI",
+     "window": "Sunday 1:00 PM",
+     "order": 7,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "lar-was",
+     "away": "LAR",
+     "home": "WAS",
+     "window": "Sunday 1:00 PM",
+     "order": 8,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "den-car",
+     "away": "DEN",
+     "home": "CAR",
+     "window": "Sunday 1:00 PM",
+     "order": 9,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "hou-lac",
+     "away": "HOU",
+     "home": "LAC",
+     "window": "Sunday 4:05 PM",
+     "order": 10,
+     "kickoff": "Sun 4:05 PM"
+    },
+    {
+     "id": "gb-ne",
+     "away": "GB",
+     "home": "NE",
+     "window": "Sunday 4:25 PM",
+     "order": 11,
+     "kickoff": "Sun 4:25 PM"
+    },
+    {
+     "id": "lv-sf",
+     "away": "LV",
+     "home": "SF",
+     "window": "Sunday 4:25 PM",
+     "order": 12,
+     "kickoff": "Sun 4:25 PM"
+    },
+    {
+     "id": "ari-sea",
+     "away": "ARI",
+     "home": "SEA",
+     "window": "Sunday 4:25 PM",
+     "order": 13,
+     "kickoff": "Sun 4:25 PM"
+    },
+    {
+     "id": "tb-chi",
+     "away": "TB",
+     "home": "CHI",
+     "window": "Sunday night",
+     "order": 14,
+     "kickoff": "Sun 8:20 PM"
+    },
+    {
+     "id": "buf-min",
+     "away": "BUF",
+     "home": "MIN",
+     "window": "Monday night",
+     "order": 15,
+     "kickoff": "Mon 8:15 PM"
+    }
+   ],
+   "bets": [
+    {
+     "id": "w9-1",
+     "who": "Hawth",
+     "game": "tb-chi",
+     "text": "Bears ML",
+     "status": "pending",
+     "spec": {
+      "kind": "ml",
+      "team": "CHI"
+     }
+    },
+    {
+     "id": "w9-2",
+     "who": "Hawth",
+     "game": "jax-bal",
+     "text": "Justice Hill 2+ receptions",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Justice Hill",
+      "stat": "rec",
+      "op": ">=",
+      "line": 2
+     }
+    },
+    {
+     "id": "w9-3",
+     "who": "Cav",
+     "game": "nyg-phi",
+     "text": "Giants -3",
+     "status": "pending",
+     "spec": {
+      "kind": "spread",
+      "team": "NYG",
+      "line": -3
+     }
+    },
+    {
+     "id": "w9-4",
+     "who": "Cav",
+     "game": "cin-atl",
+     "text": "Bengals -3",
+     "status": "pending",
+     "spec": {
+      "kind": "spread",
+      "team": "CIN",
+      "line": -3
+     }
+    },
+    {
+     "id": "w9-5",
+     "who": "Jack",
+     "game": "den-car",
+     "text": "Tetairoa McMillan 50+ receiving yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Tetairoa McMillan",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 50
+     }
+    },
+    {
+     "id": "w9-6",
+     "who": "Jack",
+     "game": "nyj-kc",
+     "text": "Kenneth Walker anytime TD",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Kenneth Walker III",
+      "stat": "totalTD",
+      "op": ">=",
+      "line": 1
+     }
+    },
+    {
+     "id": "w9-7",
+     "who": "Liam",
+     "game": "lv-sf",
+     "text": "Brock Purdy 225+ passing yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Brock Purdy",
+      "stat": "passYds",
+      "op": ">=",
+      "line": 225
+     }
+    },
+    {
+     "id": "w9-8",
+     "who": "Liam",
+     "game": "den-car",
+     "text": "Jonah Coleman anytime TD",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Jonah Coleman",
+      "stat": "totalTD",
+      "op": ">=",
+      "line": 1
+     }
+    },
+    {
+     "id": "w9-9",
+     "who": "Orion",
+     "game": "cin-atl",
+     "text": "Ja'Marr Chase o70 receiving yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Ja'Marr Chase",
+      "stat": "recYds",
+      "op": ">",
+      "line": 70
+     }
+    },
+    {
+     "id": "w9-10",
+     "who": "Orion",
+     "game": "det-mia",
+     "text": "Lions -7",
+     "status": "pending",
+     "spec": {
+      "kind": "spread",
+      "team": "DET",
+      "line": -7
+     }
+    },
+    {
+     "id": "w9-11",
+     "who": "Nick",
+     "game": "nyj-kc",
+     "text": "Kenneth Walker 80+ rushing yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Kenneth Walker III",
+      "stat": "rushYds",
+      "op": ">=",
+      "line": 80
+     }
+    },
+    {
+     "id": "w9-12",
+     "who": "Nick",
+     "game": "lv-sf",
+     "text": "Brock Bowers 70+ receiving yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Brock Bowers",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 70
+     }
+    },
+    {
+     "id": "w9-13",
+     "who": "Neil",
+     "game": "det-mia",
+     "text": "Malik Washington o42.5 receiving yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Malik Washington",
+      "stat": "recYds",
+      "op": ">",
+      "line": 42.5
+     }
+    },
+    {
+     "id": "w9-14",
+     "who": "Neil",
+     "game": "cin-atl",
+     "text": "Kyle Pitts o3.5 receptions",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Kyle Pitts",
+      "stat": "rec",
+      "op": ">",
+      "line": 3.5
+     }
+    },
+    {
+     "id": "w9-15",
+     "who": "Jules",
+     "game": "det-mia",
+     "text": "Lions team total o29.5 pts",
+     "status": "pending",
+     "spec": {
+      "kind": "teamTotal",
+      "team": "DET",
+      "side": "over",
+      "line": 29.5
+     }
+    },
+    {
+     "id": "w9-16",
+     "who": "Jules",
+     "game": "lar-was",
+     "text": "Puka Nacua o7.5 receptions",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Puka Nacua",
+      "stat": "rec",
+      "op": ">",
+      "line": 7.5
+     }
+    }
+   ]
   }
  ]
 }

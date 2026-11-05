@@ -6,6 +6,7 @@
      moneyline:  {kind:"ml", team:"PIT"}
      spread:     {kind:"spread", team:"LV", line:3.5}
      total:      {kind:"total", side:"over" | "under", line:39.5}
+     team total: {kind:"teamTotal", team:"DET", side:"over" | "under", line:29.5}
 */
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
 const ALIAS = { WAS: "WSH", LA: "LAR" };
@@ -90,6 +91,9 @@ function gradeBet(bet, g, players) {
     const m = mine + s.line - theirs;
     bet.detail = `${mine}–${theirs}, ${m > 0 ? "covering" : m < 0 ? "not covering" : "on the number"}` + tag;
     if (fin) bet.status = m > 0 ? "hit" : m < 0 ? "miss" : "push";
+  } else if (s.kind === "teamTotal") {
+    bet.detail = `${s.team} ${mine} pts` + tag;
+    if (fin) bet.status = mine === s.line ? "push" : (s.side === "over" ? mine > s.line : mine < s.line) ? "hit" : "miss";
   } else if (s.kind === "total") {
     const t = g.homeScore + g.awayScore;
     bet.detail = `${t} total pts` + tag;
