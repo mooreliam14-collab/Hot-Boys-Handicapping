@@ -2,7 +2,7 @@
    Weeks marked complete in data/weeks.json are final and never touched.
    For the open week, each bet with a "spec" is graded from live ESPN stats:
      player bet: {kind:"player", player:"Zay Flowers", stat:"recYds", op:">=" | ">", line:70}
-       stat: rec, recYds, car, rushYds, passYds, passTD, fgMade, totalTD
+       stat: rec, recYds, car, rushYds, passYds, passTD, passInt, fgMade, totalTD
      moneyline:  {kind:"ml", team:"PIT"}
      spread:     {kind:"spread", team:"LV", line:3.5}
      total:      {kind:"total", side:"over" | "under", line:39.5}
@@ -10,7 +10,7 @@
 */
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
 const ALIAS = { WAS: "WSH", LA: "LAR" };
-const UNIT = { rec: "rec", recYds: "yds", car: "car", rushYds: "yds", passYds: "yds", passTD: "pass TD", fgMade: "FG", totalTD: "TD" };
+const UNIT = { rec: "rec", recYds: "yds", car: "car", rushYds: "yds", passYds: "yds", passTD: "pass TD", passInt: "INT", fgMade: "FG", totalTD: "TD" };
 const LIVE_POLL_MS = 15000, IDLE_POLL_MS = 60000;
 
 function espnAbbr(a) { return ALIAS[a] || a; }
@@ -34,10 +34,10 @@ function parsePlayers(summary) {
       for (const a of cat.athletes || []) {
         const name = a.athlete.displayName;
         const s = {}; labels.forEach((l, i) => (s[l] = (a.stats || [])[i]));
-        const p = out[name] || (out[name] = { rec: 0, recYds: 0, recTD: 0, car: 0, rushYds: 0, rushTD: 0, passYds: 0, passTD: 0, fgMade: 0, retTD: 0 });
+        const p = out[name] || (out[name] = { rec: 0, recYds: 0, recTD: 0, car: 0, rushYds: 0, rushTD: 0, passYds: 0, passTD: 0, passInt: 0, fgMade: 0, retTD: 0 });
         if (cat.name === "receiving") Object.assign(p, { rec: n(s.REC), recYds: n(s.YDS), recTD: n(s.TD) });
         else if (cat.name === "rushing") Object.assign(p, { car: n(s.CAR), rushYds: n(s.YDS), rushTD: n(s.TD) });
-        else if (cat.name === "passing") Object.assign(p, { passYds: n(s.YDS), passTD: n(s.TD) });
+        else if (cat.name === "passing") Object.assign(p, { passYds: n(s.YDS), passTD: n(s.TD), passInt: n(s.INT) });
         else if (cat.name === "kicking") p.fgMade = n(String(s.FG || "0/0").split("/")[0]);
         else if (["kickReturns", "puntReturns", "interceptions"].includes(cat.name)) p.retTD += n(s.TD);
       }
@@ -59,6 +59,7 @@ function detailFor(spec, p) {
   if (spec.stat === "rec" || spec.stat === "recYds") return `${p.rec} rec, ${p.recYds} yds` + (p.recTD ? `, ${p.recTD} TD` : "");
   if (spec.stat === "car" || spec.stat === "rushYds") return `${p.car} car, ${p.rushYds} yds` + (p.rushTD ? `, ${p.rushTD} TD` : "");
   if (spec.stat === "passYds" || spec.stat === "passTD") return `${p.passYds} pass yds, ${p.passTD} TD`;
+  if (spec.stat === "passInt") return `${p.passYds} pass yds, ${p.passInt} INT`;
   if (spec.stat === "fgMade") return `${p.fgMade} FG made`;
   if (spec.stat === "totalTD") return p.totalTD ? `${p.totalTD} TD` : "No TD";
   return "";
