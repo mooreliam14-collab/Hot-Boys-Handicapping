@@ -1108,13 +1108,13 @@
      "id": "w10-2",
      "who": "Cav",
      "game": "buf-nyj",
-     "text": "Josh Allen o25 rushing yds",
+     "text": "Josh Allen 25+ rushing yds",
      "status": "pending",
      "spec": {
       "kind": "player",
       "player": "Josh Allen",
       "stat": "rushYds",
-      "op": ">",
+      "op": ">=",
       "line": 25
      }
     },
@@ -1288,13 +1288,13 @@
      "id": "w10-16",
      "who": "Jules",
      "game": "ne-det",
-     "text": "Drake Maye o250 passing yds",
+     "text": "Drake Maye 250+ passing yds",
      "status": "pending",
      "spec": {
       "kind": "player",
       "player": "Drake Maye",
       "stat": "passYds",
-      "op": ">",
+      "op": ">=",
       "line": 250
      }
     }
