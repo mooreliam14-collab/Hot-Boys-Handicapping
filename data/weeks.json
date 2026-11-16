@@ -1017,7 +1017,7 @@
   },
   {
    "week": 10,
-   "complete": false,
+   "complete": true,
    "games": [
     {
      "id": "ne-det",
@@ -1025,7 +1025,11 @@
      "home": "DET",
      "window": "Sunday morning",
      "order": 1,
-     "kickoff": "Sun 9:30 AM · Munich"
+     "kickoff": "Sun 9:30 AM · Munich",
+     "status": "final",
+     "awayScore": 10,
+     "homeScore": 35,
+     "ot": false
     },
     {
      "id": "kc-atl",
@@ -1033,7 +1037,11 @@
      "home": "ATL",
      "window": "Sunday 1:00 PM",
      "order": 1,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 35,
+     "homeScore": 13,
+     "ot": false
     },
     {
      "id": "hou-cle",
@@ -1041,7 +1049,11 @@
      "home": "CLE",
      "window": "Sunday 1:00 PM",
      "order": 2,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 24,
+     "homeScore": 27,
+     "ot": false
     },
     {
      "id": "min-gb",
@@ -1049,7 +1061,11 @@
      "home": "GB",
      "window": "Sunday 1:00 PM",
      "order": 3,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 30,
+     "homeScore": 10,
+     "ot": false
     },
     {
      "id": "jax-ten",
@@ -1057,7 +1073,11 @@
      "home": "TEN",
      "window": "Sunday 1:00 PM",
      "order": 4,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 40,
+     "homeScore": 23,
+     "ot": false
     },
     {
      "id": "buf-nyj",
@@ -1065,7 +1085,11 @@
      "home": "NYJ",
      "window": "Sunday 1:00 PM",
      "order": 5,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 31,
+     "homeScore": 12,
+     "ot": false
     },
     {
      "id": "sea-lv",
@@ -1073,7 +1097,11 @@
      "home": "LV",
      "window": "Sunday 4:05 PM",
      "order": 1,
-     "kickoff": "Sun 4:05 PM"
+     "kickoff": "Sun 4:05 PM",
+     "status": "final",
+     "awayScore": 21,
+     "homeScore": 13,
+     "ot": false
     },
     {
      "id": "sf-dal",
@@ -1081,7 +1109,11 @@
      "home": "DAL",
      "window": "Sunday 4:25 PM",
      "order": 1,
-     "kickoff": "Sun 4:25 PM"
+     "kickoff": "Sun 4:25 PM",
+     "status": "final",
+     "awayScore": 46,
+     "homeScore": 40,
+     "ot": false
     },
     {
      "id": "pit-cin",
@@ -1089,7 +1121,11 @@
      "home": "CIN",
      "window": "Sunday night",
      "order": 1,
-     "kickoff": "Sun 8:20 PM"
+     "kickoff": "Sun 8:20 PM",
+     "status": "final",
+     "awayScore": 18,
+     "homeScore": 38,
+     "ot": false
     }
    ],
    "bets": [
@@ -1098,207 +1134,272 @@
      "who": "Cav",
      "game": "kc-atl",
      "text": "Chiefs ML",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "ml",
       "team": "KC"
-     }
+     },
+     "detail": "Won 35–13"
     },
     {
      "id": "w10-2",
      "who": "Cav",
      "game": "buf-nyj",
      "text": "Josh Allen 25+ rushing yds",
-     "status": "pending",
+     "status": "miss",
      "spec": {
       "kind": "player",
       "player": "Josh Allen",
       "stat": "rushYds",
       "op": ">=",
       "line": 25
-     }
+     },
+     "progress": {
+      "current": 5,
+      "line": 25,
+      "unit": "yds",
+      "cleared": false
+     },
+     "detail": "5 car, 5 yds"
     },
     {
      "id": "w10-3",
      "who": "Orion",
      "game": "buf-nyj",
      "text": "Bills -6.5",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "spread",
       "team": "BUF",
       "line": -6.5
-     }
+     },
+     "detail": "Won 31–12"
     },
     {
      "id": "w10-4",
      "who": "Orion",
      "game": "jax-ten",
      "text": "Jaguars -9.5",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "spread",
       "team": "JAX",
       "line": -9.5
-     }
+     },
+     "detail": "Won 40–23"
     },
     {
      "id": "w10-5",
      "who": "Liam",
      "game": "sea-lv",
      "text": "Seahawks -6.5",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "spread",
       "team": "SEA",
       "line": -6.5
-     }
+     },
+     "detail": "Won 21–13"
     },
     {
      "id": "w10-6",
      "who": "Liam",
      "game": "pit-cin",
      "text": "Bengals ML",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "ml",
       "team": "CIN"
-     }
+     },
+     "detail": "Won 38–18"
     },
     {
      "id": "w10-7",
      "who": "Hawth",
      "game": "sea-lv",
      "text": "Ashton Jeanty 15+ receiving yds",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "player",
       "player": "Ashton Jeanty",
       "stat": "recYds",
       "op": ">=",
       "line": 15
-     }
+     },
+     "progress": {
+      "current": 46,
+      "line": 15,
+      "unit": "yds",
+      "cleared": true
+     },
+     "detail": "4 rec, 46 yds"
     },
     {
      "id": "w10-8",
      "who": "Hawth",
      "game": "hou-cle",
      "text": "Dylan Sampson 3+ receptions",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "player",
       "player": "Dylan Sampson",
       "stat": "rec",
       "op": ">=",
       "line": 3
-     }
+     },
+     "progress": {
+      "current": 4,
+      "line": 3,
+      "unit": "rec",
+      "cleared": true
+     },
+     "detail": "4 rec, 31 yds"
     },
     {
      "id": "w10-9",
      "who": "Nick",
      "game": "sf-dal",
      "text": "49ers -2.5",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "spread",
       "team": "SF",
       "line": -2.5
-     }
+     },
+     "detail": "Won 46–40"
     },
     {
      "id": "w10-10",
      "who": "Nick",
      "game": "buf-nyj",
      "text": "James Cook 90+ rushing yds",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "player",
       "player": "James Cook III",
       "stat": "rushYds",
       "op": ">=",
       "line": 90
-     }
+     },
+     "progress": {
+      "current": 157,
+      "line": 90,
+      "unit": "yds",
+      "cleared": true
+     },
+     "detail": "18 car, 157 yds"
     },
     {
      "id": "w10-11",
      "who": "Jack",
      "game": "jax-ten",
      "text": "Bhayshul Tuten 50+ rushing yds",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "player",
       "player": "Bhayshul Tuten",
       "stat": "rushYds",
       "op": ">=",
       "line": 50
-     }
+     },
+     "progress": {
+      "current": 88,
+      "line": 50,
+      "unit": "yds",
+      "cleared": true
+     },
+     "detail": "26 car, 88 yds"
     },
     {
      "id": "w10-12",
      "who": "Jack",
      "game": "sea-lv",
      "text": "Jaxon Smith-Njigba 70+ receiving yds",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "player",
       "player": "Jaxon Smith-Njigba",
       "stat": "recYds",
       "op": ">=",
       "line": 70
-     }
+     },
+     "progress": {
+      "current": 171,
+      "line": 70,
+      "unit": "yds",
+      "cleared": true
+     },
+     "detail": "8 rec, 171 yds"
     },
     {
      "id": "w10-13",
      "who": "Neil",
      "game": "min-gb",
      "text": "Packers ML",
-     "status": "pending",
+     "status": "miss",
      "spec": {
       "kind": "ml",
       "team": "GB"
-     }
+     },
+     "detail": "Lost 10–30"
     },
     {
      "id": "w10-14",
      "who": "Neil",
      "game": "sea-lv",
      "text": "Fernando Mendoza 1+ INT",
-     "status": "pending",
+     "status": "miss",
      "spec": {
       "kind": "player",
       "player": "Fernando Mendoza",
       "stat": "passInt",
       "op": ">=",
       "line": 1
-     }
+     },
+     "progress": {
+      "current": 0,
+      "line": 1,
+      "unit": "INT",
+      "cleared": false
+     },
+     "detail": "0 INT, 143 pass yds"
     },
     {
      "id": "w10-15",
      "who": "Jules",
      "game": "pit-cin",
      "text": "Steelers/Bengals o49.5",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "total",
       "side": "over",
       "line": 49.5
-     }
+     },
+     "detail": "Total 56"
     },
     {
      "id": "w10-16",
      "who": "Jules",
      "game": "ne-det",
      "text": "Drake Maye 250+ passing yds",
-     "status": "pending",
+     "status": "miss",
      "spec": {
       "kind": "player",
       "player": "Drake Maye",
       "stat": "passYds",
       "op": ">=",
       "line": 250
-     }
+     },
+     "progress": {
+      "current": 48,
+      "line": 250,
+      "unit": "yds",
+      "cleared": false
+     },
+     "detail": "Voided leg (1Q injury), counts as a loss; ticket still alive"
     }
-   ]
+   ],
+   "updatedAt": "2026-11-16T16:24:59.000Z"
   }
  ]
 }
