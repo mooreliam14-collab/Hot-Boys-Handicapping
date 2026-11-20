@@ -2,7 +2,7 @@
    Weeks marked complete in data/weeks.json are final and never touched.
    For the open week, each bet with a "spec" is graded from live ESPN stats:
      player bet: {kind:"player", player:"Zay Flowers", stat:"recYds", op:">=" | ">", line:70}
-       stat: rec, recYds, car, rushYds, passYds, passTD, passInt, fgMade, totalTD
+       stat: rec, recYds, car, rushYds, scrimYds (rush + rec yds), passYds, passTD, passInt, fgMade, totalTD
      moneyline:  {kind:"ml", team:"PIT"}
      spread:     {kind:"spread", team:"LV", line:3.5}
      total:      {kind:"total", side:"over" | "under", line:39.5}
@@ -10,7 +10,7 @@
 */
 const ESPN = "https://site.api.espn.com/apis/site/v2/sports/football/nfl";
 const ALIAS = { WAS: "WSH", LA: "LAR" };
-const UNIT = { rec: "rec", recYds: "yds", car: "car", rushYds: "yds", passYds: "yds", passTD: "pass TD", passInt: "INT", fgMade: "FG", totalTD: "TD" };
+const UNIT = { rec: "rec", recYds: "yds", car: "car", rushYds: "yds", scrimYds: "yds", passYds: "yds", passTD: "pass TD", passInt: "INT", fgMade: "FG", totalTD: "TD" };
 const LIVE_POLL_MS = 15000, IDLE_POLL_MS = 60000;
 
 function espnAbbr(a) { return ALIAS[a] || a; }
@@ -43,7 +43,7 @@ function parsePlayers(summary) {
       }
     }
   }
-  for (const p of Object.values(out)) p.totalTD = p.rushTD + p.recTD + p.retTD;
+  for (const p of Object.values(out)) { p.totalTD = p.rushTD + p.recTD + p.retTD; p.scrimYds = p.rushYds + p.recYds; }
   return out;
 }
 
@@ -59,6 +59,7 @@ function detailFor(spec, p) {
   if (spec.stat === "rec" || spec.stat === "recYds") return `${p.rec} rec, ${p.recYds} yds` + (p.recTD ? `, ${p.recTD} TD` : "");
   if (spec.stat === "car" || spec.stat === "rushYds") return `${p.car} car, ${p.rushYds} yds` + (p.rushTD ? `, ${p.rushTD} TD` : "");
   if (spec.stat === "passYds" || spec.stat === "passTD") return `${p.passYds} pass yds, ${p.passTD} TD`;
+  if (spec.stat === "scrimYds") return `${p.rushYds} rush + ${p.recYds} rec yds`;
   if (spec.stat === "passInt") return `${p.passYds} pass yds, ${p.passInt} INT`;
   if (spec.stat === "fgMade") return `${p.fgMade} FG made`;
   if (spec.stat === "totalTD") return p.totalTD ? `${p.totalTD} TD` : "No TD";
