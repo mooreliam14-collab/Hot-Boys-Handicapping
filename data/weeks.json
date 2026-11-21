@@ -1400,6 +1400,302 @@
     }
    ],
    "updatedAt": "2026-11-16T16:24:59.000Z"
+  },
+  {
+   "week": 11,
+   "complete": false,
+   "games": [
+    {
+     "id": "mia-buf",
+     "away": "MIA",
+     "home": "BUF",
+     "window": "Sunday 1:00 PM",
+     "order": 1,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "no-chi",
+     "away": "NO",
+     "home": "CHI",
+     "window": "Sunday 1:00 PM",
+     "order": 2,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "ten-dal",
+     "away": "TEN",
+     "home": "DAL",
+     "window": "Sunday 1:00 PM",
+     "order": 3,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "tb-det",
+     "away": "TB",
+     "home": "DET",
+     "window": "Sunday 1:00 PM",
+     "order": 4,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "bal-car",
+     "away": "BAL",
+     "home": "CAR",
+     "window": "Sunday 1:00 PM",
+     "order": 5,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "nyj-lac",
+     "away": "NYJ",
+     "home": "LAC",
+     "window": "Sunday 4:05 PM",
+     "order": 1,
+     "kickoff": "Sun 4:05 PM"
+    },
+    {
+     "id": "jax-nyg",
+     "away": "JAX",
+     "home": "NYG",
+     "window": "Sunday 4:25 PM",
+     "order": 1,
+     "kickoff": "Sun 4:25 PM"
+    },
+    {
+     "id": "lv-den",
+     "away": "LV",
+     "home": "DEN",
+     "window": "Sunday 4:25 PM",
+     "order": 2,
+     "kickoff": "Sun 4:25 PM"
+    },
+    {
+     "id": "cin-wsh",
+     "away": "CIN",
+     "home": "WSH",
+     "window": "Monday night",
+     "order": 1,
+     "kickoff": "Mon 8:15 PM"
+    }
+   ],
+   "bets": [
+    {
+     "id": "w11-1",
+     "who": "Cav",
+     "game": "nyj-lac",
+     "text": "Jets +3",
+     "status": "pending",
+     "spec": {
+      "kind": "spread",
+      "team": "NYJ",
+      "line": 3
+     }
+    },
+    {
+     "id": "w11-2",
+     "who": "Cav",
+     "game": "tb-det",
+     "text": "Buccaneers/Lions o46.5",
+     "status": "pending",
+     "spec": {
+      "kind": "total",
+      "side": "over",
+      "line": 46.5
+     }
+    },
+    {
+     "id": "w11-3",
+     "who": "Nick",
+     "game": "mia-buf",
+     "text": "James Cook anytime TD",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "James Cook III",
+      "stat": "totalTD",
+      "op": ">=",
+      "line": 1
+     }
+    },
+    {
+     "id": "w11-4",
+     "who": "Nick",
+     "game": "cin-wsh",
+     "text": "Joe Burrow 270+ passing yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Joe Burrow",
+      "stat": "passYds",
+      "op": ">=",
+      "line": 270
+     }
+    },
+    {
+     "id": "w11-5",
+     "who": "Jules",
+     "game": "ten-dal",
+     "text": "Cowboys -6.5",
+     "status": "pending",
+     "spec": {
+      "kind": "spread",
+      "team": "DAL",
+      "line": -6.5
+     }
+    },
+    {
+     "id": "w11-6",
+     "who": "Jules",
+     "game": "jax-nyg",
+     "text": "Isaiah Likely 5+ receptions",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Isaiah Likely",
+      "stat": "rec",
+      "op": ">=",
+      "line": 5
+     }
+    },
+    {
+     "id": "w11-7",
+     "who": "Jack",
+     "game": "bal-car",
+     "text": "Chuba Hubbard 80+ rush + rec yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Chuba Hubbard",
+      "stat": "scrimYds",
+      "op": ">=",
+      "line": 80
+     }
+    },
+    {
+     "id": "w11-8",
+     "who": "Jack",
+     "game": "no-chi",
+     "text": "Caleb Williams 200+ passing yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Caleb Williams",
+      "stat": "passYds",
+      "op": ">=",
+      "line": 200
+     }
+    },
+    {
+     "id": "w11-9",
+     "who": "Orion",
+     "game": "jax-nyg",
+     "text": "Jaguars -6",
+     "status": "pending",
+     "spec": {
+      "kind": "spread",
+      "team": "JAX",
+      "line": -6
+     }
+    },
+    {
+     "id": "w11-10",
+     "who": "Orion",
+     "game": "mia-buf",
+     "text": "Josh Allen 2+ passing TDs",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Josh Allen",
+      "stat": "passTD",
+      "op": ">=",
+      "line": 2
+     }
+    },
+    {
+     "id": "w11-11",
+     "who": "Neil",
+     "game": "cin-wsh",
+     "text": "Tee Higgins 60+ receiving yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Tee Higgins",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 60
+     }
+    },
+    {
+     "id": "w11-12",
+     "who": "Neil",
+     "game": "no-chi",
+     "text": "Luther Burden III 50+ receiving yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Luther Burden III",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 50
+     }
+    },
+    {
+     "id": "w11-13",
+     "who": "Hawth",
+     "game": "tb-det",
+     "text": "Jahmyr Gibbs 25+ receiving yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Jahmyr Gibbs",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 25
+     }
+    },
+    {
+     "id": "w11-14",
+     "who": "Hawth",
+     "game": "jax-nyg",
+     "text": "Trevor Lawrence 2+ passing TDs",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Trevor Lawrence",
+      "stat": "passTD",
+      "op": ">=",
+      "line": 2
+     }
+    },
+    {
+     "id": "w11-15",
+     "who": "Liam",
+     "game": "no-chi",
+     "text": "Jordyn Tyson 5+ receptions",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Jordyn Tyson",
+      "stat": "rec",
+      "op": ">=",
+      "line": 5
+     }
+    },
+    {
+     "id": "w11-16",
+     "who": "Liam",
+     "game": "lv-den",
+     "text": "Jonah Coleman anytime TD",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Jonah Coleman",
+      "stat": "totalTD",
+      "op": ">=",
+      "line": 1
+     }
+    }
+   ]
   }
  ]
 }
