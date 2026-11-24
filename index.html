@@ -39,6 +39,11 @@ h1{font-family:var(--f-display);font-weight:800;font-size:clamp(30px,6vw,42px);l
 .weekhead{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
 h2{font-family:var(--f-display);font-weight:700;font-size:26px;margin:0;text-transform:uppercase;letter-spacing:.4px}
 .tally{display:flex;gap:6px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px}
+.slatehead{display:flex;flex-direction:column;gap:8px}
+.slatehead .weekhead{align-items:center;flex-wrap:nowrap}
+.driver{display:inline-flex;align-items:baseline;gap:7px;padding:4px 12px;border-radius:8px;background:var(--turf-soft);border:1px solid var(--turf);white-space:nowrap}
+.driver .dl{font-size:10.5px;text-transform:uppercase;letter-spacing:1.1px;color:var(--muted);font-weight:600}
+.driver .dn{font-family:var(--f-display);font-weight:800;font-size:18px;letter-spacing:.5px;text-transform:uppercase;color:var(--turf);line-height:1.1}
 .chip{display:inline-flex;align-items:center;gap:4px;padding:2px 9px;border-radius:999px;font-family:var(--f-mono);font-size:11.5px;white-space:nowrap}
 .s-hit{background:var(--hit-bg);color:var(--hit)} .s-miss{background:var(--miss-bg);color:var(--miss)}
 .s-pending{background:var(--pend-bg);color:var(--pend)} .s-review,.s-push,.s-void{background:var(--flag-bg);color:var(--flag)}
@@ -177,11 +182,12 @@ function team(abbr){const s=el("span","tm",abbr);const c=TEAM[abbr];if(c){s.styl
 function renderSlate(){
   const box=$("#slate");box.textContent="";
   const w=weeks.find(x=>x.week===current);if(!w){box.append(el("div","state","No week selected."));return}
-  const head=el("div","weekhead");head.append(el("h2",null,"Week "+w.week));
+  const top=el("div","slatehead");const head=el("div","weekhead");head.append(el("h2",null,"Week "+w.week));
+  if(w.driver){const dr=el("div","driver");dr.append(el("span","dl","Driver"),el("span","dn",w.driver));head.append(dr)}
   const tally=el("div","tally");const bets=w.bets||[];
   if(w.legacy){tally.append(el("span","chip s-pending","From the sheet"))}
   else{["hit","miss","pending","review","push","void"].forEach(s=>{const n=bets.filter(b=>b.status===s).length;if(n||s==="hit"||s==="miss")tally.append(el("span","chip s-"+s,n+" "+cnt(s,n)))})}
-  head.append(tally);box.append(head);
+  top.append(head,tally);box.append(top);
   if(w.legacy){const p=el("div","legacy","Bet-by-bet detail wasn't recorded for this week, so it shows each person's result from the group sheet. Results are in the standings below.");box.style.display="flex";box.style.flexDirection="column";box.style.gap="12px";box.append(p);return}
   box.style.display="flex";box.style.flexDirection="column";box.style.gap="18px";
   const games=(w.games||[]).slice();

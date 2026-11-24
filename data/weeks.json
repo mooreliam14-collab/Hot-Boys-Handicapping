@@ -13,6 +13,7 @@
  "weeks": [
   {
    "week": 3,
+   "driver": "Jules",
    "legacy": {
     "Jack": null,
     "Nick": 50,
@@ -27,6 +28,7 @@
   },
   {
    "week": 4,
+   "driver": "Liam",
    "legacy": {
     "Jack": 50,
     "Nick": 100,
@@ -41,6 +43,7 @@
   },
   {
    "week": 5,
+   "driver": "Cav",
    "legacy": {
     "Jack": 100,
     "Nick": 50,
@@ -55,6 +58,7 @@
   },
   {
    "week": 6,
+   "driver": "Jack",
    "legacy": {
     "Jack": 100,
     "Nick": 100,
@@ -69,6 +73,7 @@
   },
   {
    "week": 7,
+   "driver": "Nick",
    "complete": true,
    "updatedAt": "2026-10-29T13:03:00-04:00",
    "games": [
@@ -600,10 +605,12 @@
     }
    ],
    "updatedAt": "2026-11-01T19:58:00-05:00",
-   "week": 8
+   "week": 8,
+   "driver": "Orion"
   },
   {
    "week": 9,
+   "driver": "Hawth",
    "complete": true,
    "games": [
     {
@@ -1017,6 +1024,7 @@
   },
   {
    "week": 10,
+   "driver": "Neil",
    "complete": true,
    "games": [
     {
@@ -1403,6 +1411,7 @@
   },
   {
    "week": 11,
+   "driver": "Neil",
    "complete": false,
    "games": [
     {
