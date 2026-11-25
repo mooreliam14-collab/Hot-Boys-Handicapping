@@ -1412,7 +1412,7 @@
   {
    "week": 11,
    "driver": "Neil",
-   "complete": false,
+   "complete": true,
    "games": [
     {
      "id": "mia-buf",
@@ -1420,7 +1420,11 @@
      "home": "BUF",
      "window": "Sunday 1:00 PM",
      "order": 1,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 9,
+     "homeScore": 26,
+     "ot": false
     },
     {
      "id": "no-chi",
@@ -1428,7 +1432,11 @@
      "home": "CHI",
      "window": "Sunday 1:00 PM",
      "order": 2,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 13,
+     "homeScore": 21,
+     "ot": false
     },
     {
      "id": "ten-dal",
@@ -1436,7 +1444,11 @@
      "home": "DAL",
      "window": "Sunday 1:00 PM",
      "order": 3,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 30,
+     "homeScore": 51,
+     "ot": false
     },
     {
      "id": "tb-det",
@@ -1444,7 +1456,11 @@
      "home": "DET",
      "window": "Sunday 1:00 PM",
      "order": 4,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 21,
+     "homeScore": 31,
+     "ot": false
     },
     {
      "id": "bal-car",
@@ -1452,7 +1468,11 @@
      "home": "CAR",
      "window": "Sunday 1:00 PM",
      "order": 5,
-     "kickoff": "Sun 1:00 PM"
+     "kickoff": "Sun 1:00 PM",
+     "status": "final",
+     "awayScore": 33,
+     "homeScore": 35,
+     "ot": false
     },
     {
      "id": "nyj-lac",
@@ -1460,7 +1480,11 @@
      "home": "LAC",
      "window": "Sunday 4:05 PM",
      "order": 1,
-     "kickoff": "Sun 4:05 PM"
+     "kickoff": "Sun 4:05 PM",
+     "status": "final",
+     "awayScore": 27,
+     "homeScore": 24,
+     "ot": false
     },
     {
      "id": "jax-nyg",
@@ -1468,7 +1492,11 @@
      "home": "NYG",
      "window": "Sunday 4:25 PM",
      "order": 1,
-     "kickoff": "Sun 4:25 PM"
+     "kickoff": "Sun 4:25 PM",
+     "status": "final",
+     "awayScore": 18,
+     "homeScore": 23,
+     "ot": false
     },
     {
      "id": "lv-den",
@@ -1476,7 +1504,11 @@
      "home": "DEN",
      "window": "Sunday 4:25 PM",
      "order": 2,
-     "kickoff": "Sun 4:25 PM"
+     "kickoff": "Sun 4:25 PM",
+     "status": "final",
+     "awayScore": 24,
+     "homeScore": 38,
+     "ot": false
     },
     {
      "id": "cin-wsh",
@@ -1484,7 +1516,11 @@
      "home": "WSH",
      "window": "Monday night",
      "order": 1,
-     "kickoff": "Mon 8:15 PM"
+     "kickoff": "Mon 8:15 PM",
+     "status": "final",
+     "awayScore": 20,
+     "homeScore": 22,
+     "ot": false
     }
    ],
    "bets": [
@@ -1493,18 +1529,408 @@
      "who": "Cav",
      "game": "nyj-lac",
      "text": "Jets +3",
-     "status": "pending",
+     "status": "hit",
      "spec": {
       "kind": "spread",
       "team": "NYJ",
       "line": 3
-     }
+     },
+     "detail": "27–24, covering"
     },
     {
      "id": "w11-2",
      "who": "Cav",
      "game": "tb-det",
      "text": "Buccaneers/Lions o46.5",
+     "status": "hit",
+     "spec": {
+      "kind": "total",
+      "side": "over",
+      "line": 46.5
+     },
+     "detail": "52 total pts"
+    },
+    {
+     "id": "w11-3",
+     "who": "Nick",
+     "game": "mia-buf",
+     "text": "James Cook anytime TD",
+     "status": "hit",
+     "spec": {
+      "kind": "player",
+      "player": "James Cook III",
+      "stat": "totalTD",
+      "op": ">=",
+      "line": 1
+     },
+     "progress": {
+      "current": 1,
+      "line": 1,
+      "unit": "TD",
+      "cleared": true
+     },
+     "detail": "1 TD"
+    },
+    {
+     "id": "w11-4",
+     "who": "Nick",
+     "game": "cin-wsh",
+     "text": "Joe Burrow 270+ passing yds",
+     "status": "hit",
+     "spec": {
+      "kind": "player",
+      "player": "Joe Burrow",
+      "stat": "passYds",
+      "op": ">=",
+      "line": 270
+     },
+     "progress": {
+      "current": 300,
+      "line": 270,
+      "unit": "yds",
+      "cleared": true
+     },
+     "detail": "300 pass yds, 2 TD"
+    },
+    {
+     "id": "w11-5",
+     "who": "Jules",
+     "game": "ten-dal",
+     "text": "Cowboys -6.5",
+     "status": "hit",
+     "spec": {
+      "kind": "spread",
+      "team": "DAL",
+      "line": -6.5
+     },
+     "detail": "51–30, covering"
+    },
+    {
+     "id": "w11-6",
+     "who": "Jules",
+     "game": "jax-nyg",
+     "text": "Isaiah Likely 5+ receptions",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Isaiah Likely",
+      "stat": "rec",
+      "op": ">=",
+      "line": 5
+     },
+     "progress": {
+      "current": 1,
+      "line": 5,
+      "unit": "rec",
+      "cleared": false
+     },
+     "detail": "1 rec, 35 yds"
+    },
+    {
+     "id": "w11-7",
+     "who": "Jack",
+     "game": "bal-car",
+     "text": "Chuba Hubbard 80+ rush + rec yds",
+     "status": "hit",
+     "spec": {
+      "kind": "player",
+      "player": "Chuba Hubbard",
+      "stat": "scrimYds",
+      "op": ">=",
+      "line": 80
+     },
+     "progress": {
+      "current": 120,
+      "line": 80,
+      "unit": "yds",
+      "cleared": true
+     },
+     "detail": "120 rush + 0 rec yds"
+    },
+    {
+     "id": "w11-8",
+     "who": "Jack",
+     "game": "no-chi",
+     "text": "Caleb Williams 200+ passing yds",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Caleb Williams",
+      "stat": "passYds",
+      "op": ">=",
+      "line": 200
+     },
+     "progress": {
+      "current": 181,
+      "line": 200,
+      "unit": "yds",
+      "cleared": false
+     },
+     "detail": "181 pass yds, 2 TD"
+    },
+    {
+     "id": "w11-9",
+     "who": "Orion",
+     "game": "jax-nyg",
+     "text": "Jaguars -6",
+     "status": "miss",
+     "spec": {
+      "kind": "spread",
+      "team": "JAX",
+      "line": -6
+     },
+     "detail": "18–23, not covering"
+    },
+    {
+     "id": "w11-10",
+     "who": "Orion",
+     "game": "mia-buf",
+     "text": "Josh Allen 2+ passing TDs",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Josh Allen",
+      "stat": "passTD",
+      "op": ">=",
+      "line": 2
+     },
+     "progress": {
+      "current": 1,
+      "line": 2,
+      "unit": "pass TD",
+      "cleared": false
+     },
+     "detail": "304 pass yds, 1 TD"
+    },
+    {
+     "id": "w11-11",
+     "who": "Neil",
+     "game": "cin-wsh",
+     "text": "Tee Higgins 60+ receiving yds",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Tee Higgins",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 60
+     },
+     "progress": {
+      "current": 43,
+      "line": 60,
+      "unit": "yds",
+      "cleared": false
+     },
+     "detail": "2 rec, 43 yds, 1 TD"
+    },
+    {
+     "id": "w11-12",
+     "who": "Neil",
+     "game": "no-chi",
+     "text": "Luther Burden III 50+ receiving yds",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Luther Burden III",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 50
+     },
+     "progress": {
+      "current": 10,
+      "line": 50,
+      "unit": "yds",
+      "cleared": false
+     },
+     "detail": "2 rec, 10 yds"
+    },
+    {
+     "id": "w11-13",
+     "who": "Hawth",
+     "game": "tb-det",
+     "text": "Jahmyr Gibbs 25+ receiving yds",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Jahmyr Gibbs",
+      "stat": "recYds",
+      "op": ">=",
+      "line": 25
+     },
+     "progress": {
+      "current": 20,
+      "line": 25,
+      "unit": "yds",
+      "cleared": false
+     },
+     "detail": "4 rec, 20 yds"
+    },
+    {
+     "id": "w11-14",
+     "who": "Hawth",
+     "game": "jax-nyg",
+     "text": "Trevor Lawrence 2+ passing TDs",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Trevor Lawrence",
+      "stat": "passTD",
+      "op": ">=",
+      "line": 2
+     },
+     "progress": {
+      "current": 1,
+      "line": 2,
+      "unit": "pass TD",
+      "cleared": false
+     },
+     "detail": "301 pass yds, 1 TD"
+    },
+    {
+     "id": "w11-15",
+     "who": "Liam",
+     "game": "no-chi",
+     "text": "Jordyn Tyson 5+ receptions",
+     "status": "miss",
+     "spec": {
+      "kind": "player",
+      "player": "Jordyn Tyson",
+      "stat": "rec",
+      "op": ">=",
+      "line": 5
+     },
+     "progress": {
+      "current": 1,
+      "line": 5,
+      "unit": "rec",
+      "cleared": false
+     },
+     "detail": "1 rec, 6 yds"
+    },
+    {
+     "id": "w11-16",
+     "who": "Liam",
+     "game": "lv-den",
+     "text": "Jonah Coleman anytime TD",
+     "status": "hit",
+     "spec": {
+      "kind": "player",
+      "player": "Jonah Coleman",
+      "stat": "totalTD",
+      "op": ">=",
+      "line": 1
+     },
+     "progress": {
+      "current": 3,
+      "line": 1,
+      "unit": "TD",
+      "cleared": true
+     },
+     "detail": "3 TD"
+    }
+   ],
+   "updatedAt": "2026-11-25T23:04:41.444Z"
+  },
+  {
+   "week": 12,
+   "driver": "Hawth",
+   "complete": false,
+   "games": [
+    {
+     "id": "gb-lar",
+     "away": "GB",
+     "home": "LAR",
+     "window": "Wednesday night",
+     "order": 1,
+     "kickoff": "Wed 8:00 PM"
+    },
+    {
+     "id": "chi-det",
+     "away": "CHI",
+     "home": "DET",
+     "window": "Thursday 1:00 PM",
+     "order": 1,
+     "kickoff": "Thu 1:00 PM"
+    },
+    {
+     "id": "phi-dal",
+     "away": "PHI",
+     "home": "DAL",
+     "window": "Thursday 4:30 PM",
+     "order": 1,
+     "kickoff": "Thu 4:30 PM"
+    },
+    {
+     "id": "kc-buf",
+     "away": "KC",
+     "home": "BUF",
+     "window": "Thursday night",
+     "order": 1,
+     "kickoff": "Thu 8:20 PM"
+    },
+    {
+     "id": "den-pit",
+     "away": "DEN",
+     "home": "PIT",
+     "window": "Friday 3:00 PM",
+     "order": 1,
+     "kickoff": "Fri 3:00 PM"
+    },
+    {
+     "id": "no-cin",
+     "away": "NO",
+     "home": "CIN",
+     "window": "Sunday 1:00 PM",
+     "order": 1,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "nyg-ind",
+     "away": "NYG",
+     "home": "IND",
+     "window": "Sunday 1:00 PM",
+     "order": 2,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "nyj-mia",
+     "away": "NYJ",
+     "home": "MIA",
+     "window": "Sunday 1:00 PM",
+     "order": 3,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "atl-min",
+     "away": "ATL",
+     "home": "MIN",
+     "window": "Sunday 1:00 PM",
+     "order": 4,
+     "kickoff": "Sun 1:00 PM"
+    },
+    {
+     "id": "lv-cle",
+     "away": "LV",
+     "home": "CLE",
+     "window": "Sunday night",
+     "order": 1,
+     "kickoff": "Sun 8:20 PM"
+    },
+    {
+     "id": "car-tb",
+     "away": "CAR",
+     "home": "TB",
+     "window": "Monday night",
+     "order": 1,
+     "kickoff": "Mon 8:15 PM"
+    }
+   ],
+   "bets": [
+    {
+     "id": "w12-1",
+     "who": "Jules",
+     "game": "kc-buf",
+     "text": "Chiefs/Bills o46.5",
      "status": "pending",
      "spec": {
       "kind": "total",
@@ -1513,187 +1939,109 @@
      }
     },
     {
-     "id": "w11-3",
-     "who": "Nick",
-     "game": "mia-buf",
-     "text": "James Cook anytime TD",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "James Cook III",
-      "stat": "totalTD",
-      "op": ">=",
-      "line": 1
-     }
-    },
-    {
-     "id": "w11-4",
-     "who": "Nick",
-     "game": "cin-wsh",
-     "text": "Joe Burrow 270+ passing yds",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "Joe Burrow",
-      "stat": "passYds",
-      "op": ">=",
-      "line": 270
-     }
-    },
-    {
-     "id": "w11-5",
+     "id": "w12-2",
      "who": "Jules",
-     "game": "ten-dal",
-     "text": "Cowboys -6.5",
+     "game": "chi-det",
+     "text": "Bears/Lions o49.5",
+     "status": "pending",
+     "spec": {
+      "kind": "total",
+      "side": "over",
+      "line": 49.5
+     }
+    },
+    {
+     "id": "w12-3",
+     "who": "Liam",
+     "game": "den-pit",
+     "text": "Broncos ML",
+     "status": "pending",
+     "spec": {
+      "kind": "ml",
+      "team": "DEN"
+     }
+    },
+    {
+     "id": "w12-4",
+     "who": "Liam",
+     "game": "no-cin",
+     "text": "Saints/Bengals o49.5",
+     "status": "pending",
+     "spec": {
+      "kind": "total",
+      "side": "over",
+      "line": 49.5
+     }
+    },
+    {
+     "id": "w12-5",
+     "who": "Cav",
+     "game": "chi-det",
+     "text": "Lions ML",
+     "status": "pending",
+     "spec": {
+      "kind": "ml",
+      "team": "DET"
+     }
+    },
+    {
+     "id": "w12-6",
+     "who": "Cav",
+     "game": "nyg-ind",
+     "text": "Giants -6.5",
      "status": "pending",
      "spec": {
       "kind": "spread",
-      "team": "DAL",
+      "team": "NYG",
       "line": -6.5
      }
     },
     {
-     "id": "w11-6",
-     "who": "Jules",
-     "game": "jax-nyg",
-     "text": "Isaiah Likely 5+ receptions",
+     "id": "w12-7",
+     "who": "Orion",
+     "game": "gb-lar",
+     "text": "Kyren Williams 80+ rush + rec yds",
      "status": "pending",
      "spec": {
       "kind": "player",
-      "player": "Isaiah Likely",
-      "stat": "rec",
-      "op": ">=",
-      "line": 5
-     }
-    },
-    {
-     "id": "w11-7",
-     "who": "Jack",
-     "game": "bal-car",
-     "text": "Chuba Hubbard 80+ rush + rec yds",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "Chuba Hubbard",
+      "player": "Kyren Williams",
       "stat": "scrimYds",
       "op": ">=",
       "line": 80
      }
     },
     {
-     "id": "w11-8",
-     "who": "Jack",
-     "game": "no-chi",
-     "text": "Caleb Williams 200+ passing yds",
+     "id": "w12-8",
+     "who": "Orion",
+     "game": "no-cin",
+     "text": "Joe Burrow 3+ passing TDs",
      "status": "pending",
      "spec": {
       "kind": "player",
-      "player": "Caleb Williams",
-      "stat": "passYds",
-      "op": ">=",
-      "line": 200
-     }
-    },
-    {
-     "id": "w11-9",
-     "who": "Orion",
-     "game": "jax-nyg",
-     "text": "Jaguars -6",
-     "status": "pending",
-     "spec": {
-      "kind": "spread",
-      "team": "JAX",
-      "line": -6
-     }
-    },
-    {
-     "id": "w11-10",
-     "who": "Orion",
-     "game": "mia-buf",
-     "text": "Josh Allen 2+ passing TDs",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "Josh Allen",
+      "player": "Joe Burrow",
       "stat": "passTD",
       "op": ">=",
-      "line": 2
+      "line": 3
      }
     },
     {
-     "id": "w11-11",
+     "id": "w12-9",
      "who": "Neil",
-     "game": "cin-wsh",
-     "text": "Tee Higgins 60+ receiving yds",
+     "game": "phi-dal",
+     "text": "CeeDee Lamb 80+ receiving yds",
      "status": "pending",
      "spec": {
       "kind": "player",
-      "player": "Tee Higgins",
+      "player": "CeeDee Lamb",
       "stat": "recYds",
       "op": ">=",
-      "line": 60
+      "line": 80
      }
     },
     {
-     "id": "w11-12",
+     "id": "w12-10",
      "who": "Neil",
-     "game": "no-chi",
-     "text": "Luther Burden III 50+ receiving yds",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "Luther Burden III",
-      "stat": "recYds",
-      "op": ">=",
-      "line": 50
-     }
-    },
-    {
-     "id": "w11-13",
-     "who": "Hawth",
-     "game": "tb-det",
-     "text": "Jahmyr Gibbs 25+ receiving yds",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "Jahmyr Gibbs",
-      "stat": "recYds",
-      "op": ">=",
-      "line": 25
-     }
-    },
-    {
-     "id": "w11-14",
-     "who": "Hawth",
-     "game": "jax-nyg",
-     "text": "Trevor Lawrence 2+ passing TDs",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "Trevor Lawrence",
-      "stat": "passTD",
-      "op": ">=",
-      "line": 2
-     }
-    },
-    {
-     "id": "w11-15",
-     "who": "Liam",
-     "game": "no-chi",
-     "text": "Jordyn Tyson 5+ receptions",
-     "status": "pending",
-     "spec": {
-      "kind": "player",
-      "player": "Jordyn Tyson",
-      "stat": "rec",
-      "op": ">=",
-      "line": 5
-     }
-    },
-    {
-     "id": "w11-16",
-     "who": "Liam",
-     "game": "lv-den",
+     "game": "den-pit",
      "text": "Jonah Coleman anytime TD",
      "status": "pending",
      "spec": {
@@ -1702,6 +2050,84 @@
       "stat": "totalTD",
       "op": ">=",
       "line": 1
+     }
+    },
+    {
+     "id": "w12-11",
+     "who": "Nick",
+     "game": "kc-buf",
+     "text": "Patrick Mahomes 225+ passing yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Patrick Mahomes",
+      "stat": "passYds",
+      "op": ">=",
+      "line": 225
+     }
+    },
+    {
+     "id": "w12-12",
+     "who": "Nick",
+     "game": "atl-min",
+     "text": "Bijan Robinson anytime TD",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Bijan Robinson",
+      "stat": "totalTD",
+      "op": ">=",
+      "line": 1
+     }
+    },
+    {
+     "id": "w12-13",
+     "who": "Jack",
+     "game": "lv-cle",
+     "text": "Denzel Boston 2+ receptions",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Denzel Boston",
+      "stat": "rec",
+      "op": ">=",
+      "line": 2
+     }
+    },
+    {
+     "id": "w12-14",
+     "who": "Jack",
+     "game": "nyg-ind",
+     "text": "Cam Skattebo 80+ rush + rec yds",
+     "status": "pending",
+     "spec": {
+      "kind": "player",
+      "player": "Cam Skattebo",
+      "stat": "scrimYds",
+      "op": ">=",
+      "line": 80
+     }
+    },
+    {
+     "id": "w12-15",
+     "who": "Hawth",
+     "game": "nyj-mia",
+     "text": "Jets ML",
+     "status": "pending",
+     "spec": {
+      "kind": "ml",
+      "team": "NYJ"
+     }
+    },
+    {
+     "id": "w12-16",
+     "who": "Hawth",
+     "game": "car-tb",
+     "text": "Buccaneers ML",
+     "status": "pending",
+     "spec": {
+      "kind": "ml",
+      "team": "TB"
      }
     }
    ]
